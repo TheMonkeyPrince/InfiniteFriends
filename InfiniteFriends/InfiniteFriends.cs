@@ -36,7 +36,6 @@ internal partial class InfiniteFriends
 
 #if BEPINEX
 [BepInPlugin(Metadata.PluginGuid, Metadata.PluginName, Metadata.PluginVersion)]
-[BepInProcess("SpiderHeckApp.exe")]
 internal partial class InfiniteFriends : BaseUnityPlugin
 {
     protected void Awake()

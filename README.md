@@ -2,6 +2,12 @@
 
 # Infinite Friends
 
+> **Now supports the Microsoft Store version of SpiderHeck!**
+>
+> By removing `[BepInProcess("SpiderHeckApp.exe")]` from `InfiniteFriends.cs`, the mod now works for both Steam and Microsoft Store versions of the game (the Microsoft Store version is named `SPIDERHECK`).
+
+> **Note:** This mod was only tested with BepInEx. ModWeaver compatibility is unverified.
+
 :tada::spider::spider::spider::spider::spider::tada:
 <br />**Multiplayer beyond 4 people**
 <br />A [ModWeaver](https://github.com/modweaver/modweaver) and [BepInEx 5](https://github.com/BepInEx/BepInEx) plugin for the game [SpiderHeck](https://store.steampowered.com/app/1329500/SpiderHeck)
@@ -54,12 +60,21 @@
       Follow the [instructions](https://docs.bepinex.dev/articles/user_guide/installation/index.html#installing-bepinex-1) for installing BepInEx 5.
       <br />When downloading BepInEx, choose the latest stable x64 release of BepInEx 5, which can be found [here](https://github.com/BepInEx/BepInEx/releases/latest).
 
+
 3. **Install InfiniteFriends**
+
+   > [!NOTE]
+   > Microsoft Store support is now available! The mod works for both Steam and Microsoft Store versions of SpiderHeck.
 
    Download the latest release for either [ModWeaver](https://github.com/Senyksia/InfiniteFriends/releases/latest/download/InfiniteFriends_ModWeaver.zip) or [BepInEx](https://github.com/Senyksia/InfiniteFriends/releases/latest/download/InfiniteFriends_BepInEx.zip), and unzip it into your SpiderHeck directory.
 
 
+
 ## Contributing
+
+### Microsoft Store Compatibility
+
+To support both Steam and Microsoft Store versions, `[BepInProcess("SpiderHeckApp.exe")]` was removed from `InfiniteFriends.cs`. The Microsoft Store version uses the executable name `SPIDERHECK`, so this change allows the mod to load for both versions.
 
 1. **Clone the latest source code**
 
@@ -73,7 +88,7 @@
    <Project>
      <PropertyGroup>
        <GameDir>path\to\SpiderHeck</GameDir>                                                    <!-- User-defined absolute path to SpiderHeck -->
-       <ReferencePath>$(ReferencePath);$(GameFolder)\SpiderHeckApp_Data\Managed</ReferencePath> <!-- Path to the SH game assemblies -->
+       <ReferencePath>$(ReferencePath);$(GameDir)\SpiderHeckApp_Data\Managed</ReferencePath> <!-- Path to the SH game assemblies -->
        <AssemblySearchPaths>$(AssemblySearchPaths);$(ReferencePath)</AssemblySearchPaths>       <!-- Add that path to the assembly search list -->
      </PropertyGroup>
    </Project>
