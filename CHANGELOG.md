@@ -2,6 +2,8 @@
 
 Based on [Keep a Changelog](https://keepachangelog.com)!
 
+## [Unreleased]
+
 ## [0.3.2] - 2026-02-26
 
 > ### Added
