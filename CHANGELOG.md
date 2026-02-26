@@ -4,6 +4,8 @@ Based on [Keep a Changelog](https://keepachangelog.com)!
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-02-26
+
 ## [v0.3.2] - 2026-02-26
 
 ## [0.3.2] - 2026-02-26
@@ -78,7 +80,9 @@ Based on [Keep a Changelog](https://keepachangelog.com)!
 -   Patched the local multiplayer to remove the player limit of four. Online is currently untested, and may or may not work.
 -   Extended the default spawn locations with some basic logic.
 
-[Unreleased]: https://github.com/TheMonkeyPrince/InfiniteFriends/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/TheMonkeyPrince/InfiniteFriends/compare/0.3.2...HEAD
+
+[0.3.2]: https://github.com/TheMonkeyPrince/InfiniteFriends/compare/v0.3.2...0.3.2
 
 [v0.3.2]: https://github.com/TheMonkeyPrince/InfiniteFriends/compare/0.3.1...v0.3.2
 
