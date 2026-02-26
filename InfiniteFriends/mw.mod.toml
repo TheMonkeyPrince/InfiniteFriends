@@ -3,7 +3,7 @@ incompatibilities = []
 
 [metadata]
 id = "senyksia.spiderheck.infinitefriends"
-version = "0.3.1"
+version = "v0.3.2"
 title = "InfiniteFriends"
 description = "Multiplayer beyond 4 people"
 authors = [
